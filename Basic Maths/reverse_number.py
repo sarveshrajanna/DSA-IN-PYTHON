@@ -13,11 +13,11 @@ class solution:
     def palindrome(self,n):
         new_number = 0
         duplicate = n
-        while n > 0:
+        while n > new_number :
             dig = n%10
             new_number = new_number*10 + dig
             n = n // 10
-        if new_number == duplicate:
+        if new_number == n or n == new_number//10:
             print("The number is a palindrome.")
         else:
             print("The number is not a palindrome.")
